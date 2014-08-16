@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Probability Density Function Player</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Probability Density Function Player">
+  <meta name="author" content="Neeraj Kulkarni">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Probability Density Function Player</h1>
+    <h2>Developing Data Products Project</h2>
+    <p>Neeraj Kulkarni<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Goal of the App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>This App will allow you to plot the probability density (pdf) and cumulative density function (CDF) given the change in key parameters (mean, s.d, range etc.) for a certain distribution given the point at which to evaluate the function x</p></li>
+<li><p>Plotting and Calculation of PDF&#39;s and CDF using the various distribution functions</p></li>
+<li><p>Player verison and interactivity to visualize changes in the plots for pdf and cdf</p></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Proposed Analytical Solution</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>PDF and CDF plots for the following distributions: </li>
+</ol>
+
+<p>a) Binomial 
+b) Chi-sq 
+c) F 
+d) Hyper geometric 
+f) Normal 
+g) Posisson 
+h) Student&#39;s T
+i) Uniform </p>
+
+<p>The solution is a interactive web application that takes in the consideration the parmater changes made to mean, standard deviation, range and number of observations to plot and compute pdf and cdf for a selected distribution function (uniform, poisson etc.)</p>
+
+<p>Shinyapp is on <a href="http://neeraj-k.shinyapps.io/Probability_Density_Function_App/">http://neeraj-k.shinyapps.io/Probability_Density_Function_App/</a> . Please run it thorugh Mozilla or Google Chrome as it works much better</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Solution Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li><p>For a mean of 12 and s.d of 5 and range between default -5 to 5 for normal distribution functionslidify, the pdf for a given       point value of x=2.5 is 0.0131 </p>
+
+<p>This can be seen by inputting the mean and sd and then drawing a imaginary line for x=2.5 and perpendicular from the Y axis to     instersect to get the value of Y(pdf) = 0.0131</p></li>
+</ol>
+
+<p>Please note the solution is contingent on the distribution being selected (in this case it was normal)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Questions/Feedback</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I hope this provides you the ability to plot variety of pdf and cdf functions on the fly and also to estimate their values. </p>
+
+<p>Please provide feedback to neerajk at <a href="mailto:kulkarni_neeraj@yahoo.com">kulkarni_neeraj@yahoo.com</a></p>
+
+<p>Have fun with the interactive app!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Goal of the App'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Proposed Analytical Solution'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Solution Example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Questions/Feedback'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

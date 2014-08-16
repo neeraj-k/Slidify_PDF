@@ -1,0 +1,66 @@
+---
+title       : Probability Density Function Player 
+subtitle    : Developing Data Products Project 
+author      : Neeraj Kulkarni 
+job         : Data Scientist 
+framework   : io2012      # {io2012, html5slides, shower, dzslides, ...} 
+highlighter : highlight.js  # {highlight.js, prettify, highlight} 
+hitheme     : tomorrow     #  
+widgets     : []            # {mathjax, quiz, bootstrap} 
+mode        : selfcontained # {standalone, draft} 
+---
+
+## Goal of the App
+
+1. This App will allow you to plot the probability density (pdf) and cumulative density function (CDF) given the change in key parameters (mean, s.d, range etc.) for a certain distribution given the point at which to evaluate the function x
+
+2. Plotting and Calculation of PDF's and CDF using the various distribution functions
+
+3. Player verison and interactivity to visualize changes in the plots for pdf and cdf
+
+--- 
+
+
+## Proposed Analytical Solution
+
+ 
+1. PDF and CDF plots for the following distributions: 
+
+a) Binomial 
+b) Chi-sq 
+c) F 
+d) Hyper geometric 
+f) Normal 
+g) Posisson 
+h) Student's T
+i) Uniform 
+
+ 
+The solution is a interactive web application that takes in the consideration the parmater changes made to mean, standard deviation, range and number of observations to plot and compute pdf and cdf for a selected distribution function (uniform, poisson etc.)
+
+Shinyapp is on http://neeraj-k.shinyapps.io/Probability_Density_Function_App/ . Please run it thorugh Mozilla or Google Chrome as it works much better
+
+---
+
+## Solution Example 
+
+1. For a mean of 12 and s.d of 5 and range between default -5 to 5 for normal distribution functionslidify, the pdf for a given       point value of x=2.5 is 0.0131 
+
+      This can be seen by inputting the mean and sd and then drawing a imaginary line for x=2.5 and perpendicular from the Y axis to     instersect to get the value of Y(pdf) = 0.0131
+      
+Please note the solution is contingent on the distribution being selected (in this case it was normal)
+
+---
+
+## Questions/Feedback
+
+
+I hope this provides you the ability to plot variety of pdf and cdf functions on the fly and also to estimate their values. 
+ 
+Please provide feedback to neerajk at kulkarni_neeraj@yahoo.com
+  
+Have fun with the interactive app!
+
+
+
+
